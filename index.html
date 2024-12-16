@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <br />
+    <div class="container">
+      <h1>Welcome to My Resume Maker Website</h1>
+
+      <form id="resumeForm">
+        <!-- Name and Email Section -->
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+          required
+        /><br />
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email address"
+          required
+        /><br />
+
+        <!-- Horizontal Line -->
+        <hr />
+
+        <!-- Education Section -->
+        <h3>Education</h3>
+        <label for="degree">Degree:</label>
+        <input
+          type="text"
+          id="degree"
+          name="degree"
+          placeholder="Enter your degree name"
+          required
+        /><br />
+
+        <label for="institution">University or School:</label>
+        <input
+          type="text"
+          id="institution"
+          name="institution"
+          placeholder="XYZ University or XYZ School"
+        /><br />
+
+        <!-- Horizontal Line -->
+        <hr />
+
+        <!-- Work Experience Section -->
+        <h3>Work Experience</h3>
+        <label for="jobTitle">Job Title:</label>
+        <input
+          type="text"
+          id="jobTitle"
+          name="jobTitle"
+          placeholder="Enter your job title"
+          required
+        /><br />
+
+        <label for="company">Company:</label>
+        <input
+          type="text"
+          id="company"
+          name="company"
+          placeholder="XYZ Company"
+        /><br />
+
+        <!-- Horizontal Line -->
+        <hr />
+
+        <!-- Skills Section -->
+        <h3>Skills</h3>
+        <label for="skills">Skills:</label>
+        <input
+          type="text"
+          id="skills"
+          name="skills"
+          placeholder="Enter your skills"
+          required
+        /><br />
+
+        <button type="submit">Generate Resume</button>
+      </form>
+    </div>
+
+    <div id="resumeOutput">
+      <hr />
+      <h2>Your Resume</h2>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
